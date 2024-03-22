@@ -79,3 +79,7 @@ document.querySelector('#multiplied').textContent = multipliedArray.join(', ');
 /* Output Sum of Multiplied by 2 Array */
 let sumOfDoubledNumbers = doubledNumbers.reduce((sum, number) => sum + number, 0);
 document.querySelector('#sumOfMultiplied').textContent = sumOfDoubledNumbers;
+
+const imageElement = document.querySelector('#img');
+imageElement.setAttribute ('src', photo);
+imageElement.setAttribute('alt','Profile picture of Sabelo K. Mpungose');

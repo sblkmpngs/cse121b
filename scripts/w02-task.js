@@ -5,7 +5,7 @@
 /* Step 2 - Variables */
 let fullName = 'Sabelo K. Mpungose';
 let currentYear = '2024';
-let profilePicture = 'images/IMG-20230924-WA0008.jpg';
+let profilePicture = 'images/photo.jpg';
 
 
 /* Step 3 - Element Variables */
