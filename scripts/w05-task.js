@@ -1,26 +1,10 @@
 /* W05: Programming Tasks */
 /* Declare and initialize global variables */
-const templesElement = document.querySelector("#temples");
+templesElement = document.getElementById('temples');
+const templesElement = document.querySelector('temples');
 let templeList = [];
 /* async displayTemples Function */
-const displayTemples = (temples) => {
-  temples.forEach(temple => {
-    const article = document.createElement('article');
-    article.textContent = temple;
-    templesElement.appendChild(article);
-
-    const h3 = document.createElement('h3');
-    h3.textContent = temple.templeName
-    article.appendChild(h3);
-
-    const img = document.createElement('img');
-    imageElement.setAttribute ('src', imageUrl);
-    imageElement.setAttribute('alt',location);
-    img.textContent = temple;
-    article.appendChild(img);
-
-  });
-}
+const displayTemples = async (temples) => { temples.forEach(temple => { let templeElement = document.createElement('div'); templeElement.textContent = temple.name; templesElement.appendChild(templeElement); }); };
 
 /* async getTemples Function using fetch()*/
 const getTemples = async () => {
@@ -67,3 +51,4 @@ function filterTemples(temples){
 document.querySelector('#filtered').addEventListener('change', () => {filterTemples(templeList)});
 
 getTemples();
+
